@@ -6,12 +6,17 @@
   ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 6, "body": "Please update", "postId": 7 },
     { "id": 2, "body": "some comment", "postId": 1 }
   ],
   "profile": {
+    "name": "MrL"
+  },
+  "profile-something-Else": {
     "name": "typicode"
   },
   "issues": [
+    { "incident_id": "EFM-4467", "project": "RFM", "summary": "Something summary" },
     { "incident_id": "EFM-3423", "project": "EFM", "summary": "Here is the summary" }
   ]
 }
