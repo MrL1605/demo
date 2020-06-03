@@ -1,19 +1,19 @@
 import React, {Component} from "react";
 import {
-    Container,
-    Icon,
-    Step,
     Breadcrumb,
-    Menu,
-    Segment,
-    Placeholder,
-    Grid,
-    Ref,
-    Rail,
-    Sticky,
-    Item,
     Card,
-    Image
+    Container,
+    Grid,
+    Icon,
+    Image,
+    Item,
+    Menu,
+    Placeholder,
+    Rail,
+    Ref,
+    Segment,
+    Step,
+    Sticky
 } from "semantic-ui-react";
 import CaseDetails from "./details/CaseDetails";
 import {DB} from "../API";
@@ -102,7 +102,8 @@ export default class DetailsComponent extends Component {
 
                                     <div>
                                         {/* Activity menu here  */}
-                                        <Menu attached="top" tabular style={{marginTop: "1rem"}}>
+                                        <Menu attached="top" tabular style={{marginTop: "1rem"}}
+                                              inverted={this.props.nm}>
                                             <Menu.Item
                                                 name="activity"
                                                 color="brown"

@@ -11,7 +11,6 @@ import {
     Image
 } from "semantic-ui-react";
 import GenesisComponent from "./icms/GenesisComponent";
-import {DB} from "./API";
 
 export default class App extends Component {
     constructor() {
