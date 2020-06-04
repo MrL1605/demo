@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import "./styles.css";
+import GenesisComponent from "./icms/GenesisComponent";
 
 // import GenesisComponent from "./icms/GenesisComponent";
 
@@ -18,12 +19,12 @@ export default class App extends Component {
     }
 
     render() {
-        // if (this.state.showICMS) {
-        // return <GenesisComponent/>;
-        // }
+        if (this.state.showICMS) {
+            return <GenesisComponent/>;
+        }
 
         return (
-            <div className="App">
+            <div className="App has-text-centered">
                 <h1 className="title is-1">ICMS</h1>
                 <h2 className="title is-2">Code Name: Beryllium</h2>
                 <h3 className="title is-3">Let's see what this CSS framework has for you</h3>
@@ -32,4 +33,11 @@ export default class App extends Component {
             </div>
         );
     }
+}
+
+export function classNames(classes) {
+    return Object.entries(classes)
+        .filter(([key, value]) => value)
+        .map(([key, value]) => key)
+        .join(' ');
 }
