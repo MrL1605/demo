@@ -30,6 +30,9 @@ export default class App extends Component {
                 <h3 className="title is-3">Let's see what this CSS framework has for you</h3>
                 <button onClick={this.openICMS} className="button is-outlined">Open ICMS</button>
                 <p> Fun fact: <strong>Beryllium</strong> is named after a town Belur in Karnataka </p>
+                <a href="https://bulma.io">
+                    <img src="/path/to/made-with-bulma.png" alt="Made with Bulma" width="256" height="48"/>
+                </a>
             </div>
         );
     }
