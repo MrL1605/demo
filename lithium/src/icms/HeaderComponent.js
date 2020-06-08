@@ -10,10 +10,11 @@ export default class HeaderComponent extends Component {
         const availableStyles = ["https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
             "https://bootswatch.com/4/materia/bootstrap.min.css",
             "https://bootswatch.com/4/darkly/bootstrap.min.css",
-            "https://bootswatch.com/4/slate/bootstrap.min.css"
+            "https://bootswatch.com/4/slate/bootstrap.min.css",
+            "https://bootswatch.com/4/superhero/bootstrap.min.css"
         ];
-        const availableStylesNames = ["Default", "Materia", "Darkly", "Slate"];
-        const darkStyles = [false, false, true, true];
+        const availableStylesNames = ["Default", "Materia", "Darkly", "Slate", "SuperHero"];
+        const darkStyles = [false, false, true, true, false];
         const toggleNightMode = () => {
             this.setState({nm: !this.state.nm}, () => {
                 this.props.night(this.state.nm);

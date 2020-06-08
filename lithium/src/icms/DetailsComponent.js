@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {DB} from "../API";
+import CaseDetails from "./details/CaseDetails";
 
 export default class DetailsComponent extends Component {
     contextRef = React.createRef();
@@ -76,14 +77,11 @@ export default class DetailsComponent extends Component {
                     <div className="row">
                         <div className="col-8">
                             {/* Big huge Case Details here  */}
-                            {this.getPlaceHolder()}
-                            {/*
-                                    <CaseDetails
-                                        issueId={this.props.issueId}
-                                        issue_summary={this.props.issue_summary}
-                                        nm={this.props.nm}
-                                    />
-                                    */}
+                            <CaseDetails
+                                issueId={this.props.issueId}
+                                issue_summary={this.props.issue_summary}
+                                nm={this.props.nm}
+                            />
 
                             {/*<div>*/}
                             {/* Activity menu here  */}
@@ -126,13 +124,13 @@ export default class DetailsComponent extends Component {
 */}
                         </div>
                         <div className="col-4">
-                            <div className="card text-white bg-secondary mb-3">
+                            <div className="card text-info bg-secondary mb-3">
                                 <div className="card-header">Pinned Details</div>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item list-group-item-secondary">
                                         <dl>
                                             <dt>Project:</dt>
-                                            <dd>{this.state.projectName}</dd>
+                                            <dd>{this.props.project}</dd>
                                         </dl>
                                     </li>
                                     <li className="list-group-item list-group-item-secondary">

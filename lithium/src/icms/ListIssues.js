@@ -139,7 +139,7 @@ export default class ListIssues extends Component {
                 onClick={() => this.selectIssue(each_issue["incident_id"], each_issue)}
                 className={tableClasses}>
                 <td>
-                    <span className="tag is-success is-light is-normal">
+                    <span className="badge badge-primary">
                         {each_issue["incident_id"]}
                     </span>
                 </td>
@@ -159,10 +159,9 @@ export default class ListIssues extends Component {
     }
 
     getIconForEntityType(entity_type) {
-        const tagClasses = classNames({"tag is-light": !this.props.nm, "tag is-white": this.props.nm});
         if (entity_type === "Account") {
             return (
-                <span className={tagClasses}>
+                <span className="badge badge-info">
                     <span className="mr-1">
                         <i className="fas fa-folder"/>
                     </span>
@@ -171,7 +170,7 @@ export default class ListIssues extends Component {
             );
         } else if (entity_type === "Customer") {
             return (
-                <span className={tagClasses}>
+                <span className="badge badge-info">
                     <span className="mr-1">
                         <i className="fas fa-users"/>
                     </span>
@@ -180,7 +179,7 @@ export default class ListIssues extends Component {
             );
         } else if (entity_type === "Employee") {
             return (
-                <span className={tagClasses}>
+                <span className="badge badge-info">
                     <span className="mr-1">
                         <i className="fas fa-suitcase"/>
                     </span>
@@ -189,7 +188,7 @@ export default class ListIssues extends Component {
             );
         } else if (entity_type === "Branch") {
             return (
-                <span className={tagClasses}>
+                <span className="badge badge-info">
                     <span className="mr-1">
                         <i className="fas fa-code-branch"/>
                     </span>
